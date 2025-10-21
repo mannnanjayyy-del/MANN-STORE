@@ -16,3 +16,16 @@ color: #191970;
   width: 150px;
   border-radius: 50%;
 }
+/* Link layanan agar bisa diklik */
+.service-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.service-link:hover {
+  color: #00ff99;
+  text-decoration: underline;
+  text-shadow: 0 0 10px #00ff99;
+}
