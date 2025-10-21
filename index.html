@@ -1,175 +1,110 @@
 <!DOCTYPE html>
-<html>
-  <head>
-       <title>profil digital -[Mohammad Rahman]</title>
-       <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-       <div class="kartu-profil">
-       <img src="PP.webp.jpg" alt="foto profil saya">
-         <header>
-       <h1>Mohammad Rahman</h1>
-           <header>
-             <main>
-               <section id="profil">
-       <p>siswa SMK terbilang biasa saja tapi memiliki mimpi yang indah dan ingin membahagiakan semuanya!</p>
-       <a href="https://www.instagram.com/mannnn_storexzz22?igsh=MWxqcTRhNTNobmU2eA==">kunjungi instagram saya!</a>
-               </section>          
-       <button id="sapaButton">Sapa Guweee brooo!</button>
-    </div>
-<script src="script.js"></script>
-</body>
-</html>
-
-
-
-<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio Design — Mohammad Rahman</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Portofolio desain — Nama Anda. UI/UX, branding, ilustrasi, dsb.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANN STORE</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      color: #e2e8f0;
+    }
+
+    .store-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 15px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .contact a {
+      background: #1d4ed8;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .contact a:hover {
+      background: #2563eb;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Mohammad Rahman</a>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="navToggle" class="nav-toggle">☰</button>
-    </div>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>Halo — saya <span class="accent">Mohammad Rahman</span></h1>
-        <p class="lead">siswa dengan jurusan Desainer visual & komunikasi yang membuat produk yang jelas, elegan, dan mudah digunakan.</p>
-        <a class="btn" href="#projects">Lihat Proyek</a>
-      </div>
-    </section>
+  <h1>MANN STORE</h1>
+  <p>Tempat layanan digital terpercaya — Pulsa, Top Up Game, Suntik Sosmed, Jasa Edit, Aplikasi Pro, dan lainnya!</p>
 
-    <section id="about" class="container about">
-      <h2>Tentang Saya</h2>
-      <p>Saya bekerja pada branding, desain antarmuka, dan ilustrasi. Saya suka menyelesaikan masalah desain dengan solusi sederhana yang estetis dan fungsional.</p>
-      <ul class="skills">
-        <li>Portofolio</li>
-        <li>Desain grafis</li>
-        <li>Illustrasi</li>
-        <li>Poster</li>
-      </ul>
-    </section>
+  <div class="store-buttons">
+    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20pesan%20Pulsa" class="btn">Pulsa</a>
+    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Top%20Up%20Game" class="btn">Top Up Game</a>
+    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Suntik%20Sosmed" class="btn">Suntik Sosmed</a>
+    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Jasa%20Edit" class="btn">Jasa Edit</a>
+    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Aplikasi%20Pro" class="btn">Aplikasi Pro</a>
+  </div>
 
-    <section id="projects" class="container projects">
-      <h2>Proyek</h2>
-      <div class="grid" id="projectsGrid">
-        <!-- Contoh item proyek. Duplikat dan ganti konten nyata Anda -->
-        <article class="project-card" data-title="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
-          <div class="thumb">Thumbnail</div>
-          <h3>Desain grafis</h3>
-          <p class="meta">Desain • 2025</p>
-          <button class="details-btn">Lihat</button>
-        </article>
+  <div class="contact">
+    <a href="https://wa.me/6281357525602" target="_blank">💬 Hubungi via WhatsApp</a>
+    <a href="https://www.instagram.com/mannnn_storexzz22?igsh=MWxqcTRhNTNobmU2eA==" target="_blank">📷 Instagram</a>
+  </div>
 
-        <article class="project-card" data-title="Aplikasi Task" data-desc="UI/UX untuk aplikasi manajemen tugas dengan micro-interactions." data-img="">
-          <h3>Poster</h3>
-          <p class="meta">Poster • 2025</p>
-          <button class="details-btn">Lihat</button>
-        </article>
-        <article class="project-card" data-tittle="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
-        <h3>portofolio</h3>
-        <p class="meta">Portofolio • 2025</p>
-        <button class="details-btn">Lihat selengkapnya</button>
-        </article><!DOCTYPE html>
-<html>
-  <head>
-       <title>profil digital -[Mohammad Rahman]</title>
-       <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-       <div class="kartu-profil">
-       <img src="PP.webp.jpg" alt="foto profil saya">
-         <header>
-       <h1>Mohammad Rahman</h1>
-           <header>
-             <main>
-               <section id="profil">
-       <p>siswa SMK terbilang biasa saja tapi memiliki mimpi yang indah dan ingin membahagiakan semuanya!</p>
-       <a href="https://www.instagram.com/mannnn_storexzz22?igsh=MWxqcTRhNTNobmU2eA==">kunjungi instagram saya!</a>
-               </section>          
-       <button id="sapaButton">Sapa Guweee brooo!</button>
-    </div>
-<script src="script.js"></script>
+  <footer>
+    &copy; 2025 MANN STORE — All Rights Reserved.
+  </footer>
+
 </body>
 </html>
-
-
-
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio Design — Mohammad Rahman</title>
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Portofolio desain — Nama Anda. UI/UX, branding, ilustrasi, dsb.">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Mohammad Rahman</a>
-      <nav class="nav" id="nav">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="navToggle" class="nav-toggle">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1>Halo — saya <span class="accent">Mohammad Rahman</span></h1>
-        <p class="lead">siswa dengan jurusan Desainer visual & komunikasi yang membuat produk yang jelas, elegan, dan mudah digunakan.</p>
-        <a class="btn" href="#projects">Lihat Proyek</a>
-      </div>
-    </section>
-
-    <section id="about" class="container about">
-      <h2>Tentang Saya</h2>
-      <p>Saya bekerja pada branding, desain antarmuka, dan ilustrasi. Saya suka menyelesaikan masalah desain dengan solusi sederhana yang estetis dan fungsional.</p>
-      <ul class="skills">
-        <li>Portofolio</li>
-        <li>Desain grafis</li>
-        <li>Illustrasi</li>
-        <li>Poster</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="container projects">
-      <h2>Proyek</h2>
-      <div class="grid" id="projectsGrid">
-        <!-- Contoh item proyek. Duplikat dan ganti konten nyata Anda -->
-        <article class="project-card" data-title="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
-          <div class="thumb">Thumbnail</div>
-          <h3>Desain grafis</h3>
-          <p class="meta">Desain • 2025</p>
-          <button class="details-btn">Lihat</button>
-        </article>
-
-        <article class="project-card" data-title="Aplikasi Task" data-desc="UI/UX untuk aplikasi manajemen tugas dengan micro-interactions." data-img="">
-          <h3>Poster</h3>
-          <p class="meta">Poster • 2025</p>
-          <button class="details-btn">Lihat</button>
-        </article>
-        <article class="project-card" data-tittle="Branding Cafe" data-desc="Branding lengkap: logo, kemasan, dan social assets." data-img="">
-        <h3>portofolio</h3>
-        <p class="meta">Portofolio • 2025</p>
-        <button class="details-btn">Lihat selengkapnya</button>
-        </article>
