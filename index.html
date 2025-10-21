@@ -1,110 +1,188 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MANN STORE</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
     body {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(-45deg, #000000, #1a1a1a, #121212, #0a0a0a);
+      background-size: 400% 400%;
       color: white;
       text-align: center;
-      min-height: 100vh;
-      padding: 30px;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      animation: gradientMove 10s ease infinite;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    img.logo {
+      width: 200px;
+      margin-top: 30px;
+      animation: fadeInLogo 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInLogo {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-      color: #38bdf8;
+      font-size: 32px;
+      margin-top: 15px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
     }
 
     p {
-      font-size: 1.1em;
-      margin-bottom: 30px;
-      color: #e2e8f0;
+      font-size: 16px;
+      color: #ccc;
     }
 
-    .store-buttons {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      max-width: 600px;
-      margin: 0 auto 40px;
-    }
-
-    .btn {
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 15px;
-      border-radius: 10px;
+    .button {
+      display: block;
+      margin: 15px auto;
+      padding: 12px 20px;
+      width: 80%;
+      background-color: #25D366;
+      color: white;
       text-decoration: none;
+      border-radius: 10px;
       font-weight: bold;
-      transition: 0.3s;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.4);
     }
 
-    .btn:hover {
-      background: #0ea5e9;
+    .button:hover {
+      background-color: #128C7E;
+      box-shadow: 0 0 25px rgba(37, 211, 102, 0.9);
       transform: scale(1.05);
     }
 
-    .contact {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
+    .instagram {
+      background-color: #E1306C;
+      box-shadow: 0 0 15px rgba(225, 48, 108, 0.4);
     }
 
-    .contact a {
-      background: #1d4ed8;
+    .instagram:hover {
+      background-color: #C13584;
+      box-shadow: 0 0 25px rgba(225, 48, 108, 0.9);
+    }
+
+    .owner {
+      margin-top: 35px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .owner img {
+      width: 230px;
+      border-radius: 15px;
+      margin-top: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.25);
+      transition: transform 0.3s ease;
+    }
+
+    .owner img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255,255,255,0.4);
+    }
+
+    /* Tombol musik */
+    #musicControl {
+      margin-top: 25px;
+      background-color: #444;
       color: white;
-      padding: 12px 20px;
-      border-radius: 10px;
-      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 15px;
+      cursor: pointer;
       font-weight: bold;
       transition: 0.3s;
     }
 
-    .contact a:hover {
-      background: #2563eb;
+    #musicControl:hover {
+      background-color: #25D366;
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
       transform: scale(1.05);
     }
 
     footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #94a3b8;
+      margin-top: 25px;
+      font-size: 12px;
+      color: #777;
+      padding-bottom: 20px;
     }
   </style>
 </head>
 <body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="Proyek Baru 40 [AA21C73].png.jpg" alt="Logo MANN STORE" class="logo" />
 
-  <h1>MANN STORE</h1>
-  <p>Tempat layanan digital terpercaya — Pulsa, Top Up Game, Suntik Sosmed, Jasa Edit, Aplikasi Pro, dan lainnya!</p>
+    <h1>MANN STORE</h1>
+    <p>Pulsa • Topup Game • Suntik Sosmed • Jasa Edit • Aplikasi Pro</p>
 
-  <div class="store-buttons">
-    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20pesan%20Pulsa" class="btn">Pulsa</a>
-    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Top%20Up%20Game" class="btn">Top Up Game</a>
-    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Suntik%20Sosmed" class="btn">Suntik Sosmed</a>
-    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Jasa%20Edit" class="btn">Jasa Edit</a>
-    <a href="https://wa.me/6281357525602?text=Halo%20MANN%20STORE%2C%20saya%20ingin%20Aplikasi%20Pro" class="btn">Aplikasi Pro</a>
+    <!-- Tombol WhatsApp -->
+    <a href="https://wa.me/6281357525602" class="button">Hubungi via WhatsApp</a>
+
+    <!-- Tombol Instagram -->
+    <a href="https://www.instagram.com/mannnn_storexzz22?igsh=MWxqcTRhNTNobmU2eA==" class="button instagram">Kunjungi Instagram</a>
+
+    <!-- Foto Owner -->
+    <div class="owner">
+      <h3>Owner:</h3>
+      <img src="IMG_20250928_070833_619.webp.jpg" alt="Owner MANN STORE" />
+    </div>
+
+    <!-- Musik -->
+    <button id="musicControl">🔊 Matikan Musik</button>
+    <audio id="bgMusic" autoplay loop>
+      <source src="Pufino - Hopeful (freetouse.com).mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung pemutar musik.
+    </audio>
+
+    <footer>© 2025 MANN STORE. All Rights Reserved.</footer>
   </div>
 
-  <div class="contact">
-    <a href="https://wa.me/6281357525602" target="_blank">💬 Hubungi via WhatsApp</a>
-    <a href="https://www.instagram.com/mannnn_storexzz22?igsh=MWxqcTRhNTNobmU2eA==" target="_blank">📷 Instagram</a>
-  </div>
+  <script>
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicControl");
 
-  <footer>
-    &copy; 2025 MANN STORE — All Rights Reserved.
-  </footer>
-
+    btn.addEventListener("click", () => {
+      if (music.paused) {
+        music.play();
+        btn.textContent = "🔊 Matikan Musik";
+      } else {
+        music.pause();
+        btn.textContent = "🔇 Nyalakan Musik";
+      }
+    });
+  </script>
 </body>
 </html>
