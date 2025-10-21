@@ -29,3 +29,28 @@ color: #191970;
   text-decoration: underline;
   text-shadow: 0 0 10px #00ff99;
 }
+.layanan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.btn-layanan {
+  background: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: 0 0 8px rgba(255,255,255,0.2);
+}
+
+.btn-layanan:hover {
+  background: #00ff99;
+  color: black;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ff99;
+}
